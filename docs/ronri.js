@@ -26,8 +26,7 @@ window.onload = function(){
   forms.insertBefore(texts,canvas);
   forms.insertBefore(buttons,canvas);
 
-
-  
+  //入力された数式を逆ポーランド表記法に変換する関数
   function change_RPN(string){
     var stc = [];
     var baf = [];
@@ -69,7 +68,7 @@ window.onload = function(){
     }
     return baf;
   }
-  
+  //木構造に変換する関数
   function create_tree(RPN){
     var stack = [];
     var tree = new Node();
@@ -140,8 +139,7 @@ window.onload = function(){
         print(depth);
         print(T.key);
         draw_rect(tree_x,tree_y,T.key);
-      }
-
+      /*頭悪い*/
       context.beginPath();
       context.strokeStyle = '#060608'; //線の色
       context.lineWidth = '4';
@@ -182,7 +180,7 @@ window.onload = function(){
     if (inputs_shiki != undefined){
       var ans = change_RPN(inputs_shiki);    
       var treex = create_tree(ans);
-      tree_print(treex[0],x_tree=canvas.width/2,y_tree=30,depth=0)
+      tree_print(treex[0],x_tree=canvas.width/2,y_tree=0,depth=0)
     }
   }
   
