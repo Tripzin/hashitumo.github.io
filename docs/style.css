@@ -24,7 +24,7 @@ h1{
 
 #canvas{
     background:#FFF;
-    box-shadow: 2px 2px 4px -4px gray inset;
+    box-shadow: 2px 2px 4px -4px #6d91ab inset;
 }
 
 #test1{
