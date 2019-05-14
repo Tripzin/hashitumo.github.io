@@ -1,0 +1,30 @@
+html{
+    width:95%;
+}
+#dram{
+    height:50px;
+    width:100%;
+    background: #deb887;
+    display: flex;
+    justify-content: space-around;
+    padding:0px 0px 0px 0px;
+    border:1px solid black;
+}
+#dram > div{
+    width:20%;
+    height: 100%;
+    padding:0,0;
+}
+
+li{
+    text-align: center;
+    list-style-type: none;
+}
+.ans{
+    height:20%;
+    width:30%;
+    border:5px dashed greenyellow;
+    background: lightgoldenrodyellow;
+    margin-top:10px;
+    text-align:center;
+}
