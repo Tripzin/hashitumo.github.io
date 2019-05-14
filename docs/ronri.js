@@ -139,6 +139,7 @@ window.onload = function(){
         print(depth);
         print(T.key);
         draw_rect(tree_x,tree_y,T.key);
+      }
       /*頭悪い*/
       context.beginPath();
       context.strokeStyle = '#060608'; //線の色
