@@ -1,7 +1,6 @@
 body{
 
-    width:99%;
-
+    width:100%;
 }
 #dram{
     margin-top:20%;
@@ -17,6 +16,9 @@ body{
     width: 20%;
     height: 100%;
     padding:0,0;
+}
+.all{
+    height: 1000px;
 }
 
 ul{
