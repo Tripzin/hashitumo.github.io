@@ -67,9 +67,6 @@ $(function(){
     document.addEventListener("touchstart",prevent,false);
     document.addEventListener("touchmove",prevent,false);
     document.addEventListener("touchend",prevent,false);
-    document.addEventListener("gesturestart",prevent,false);
-    document.addEventListener("gesturechange",prevent,false);
-    document.addEventListener("gestureend",prevent,false);
-  
 
+ 
 });
