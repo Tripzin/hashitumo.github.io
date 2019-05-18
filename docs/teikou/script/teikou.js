@@ -5,7 +5,14 @@ $(function(){
         var dsan = parseInt(nums[2]-1);
         var dyon = parseInt(nums[3]-1);
 
-
+        switch(dsan){
+            case 7:
+                dsan = -1;
+                break;
+            case 8:
+                dsan = -2;
+                break;
+        }
 
         //誤差範囲
         switch(dyon){
@@ -24,13 +31,16 @@ $(function(){
                 dyon = 20;
         }
 
-        return String((diti*10+dni)*10**dsan)+'Ω 誤差±'+dyon+"%";
+        return String(Math.floor((diti*10+dni)*10**dsan*10)/10)+'Ω 誤差±'+dyon+"%";
     }
 
     var num_list = [];
     var color_list_ty0 = ['black','brown','red','orange','yellow',
-                      'green','blue','purple','gray','white'];
+                      'green','blue','magenta','gray','white'];
     var color_list_ty1 = ['brown','red','gold','silver','snow'];
+
+    var color_list_ty2 = ['black','brown','red','orange','yellow',
+    'green','blue','gold','silver'];
 
     $('.dram0').children('li').each(function(index){
         $(this).css('background',color_list_ty0[index]);
@@ -39,7 +49,7 @@ $(function(){
         $(this).css('background',color_list_ty0[index]);
     });
     $('.dram2').children('li').each(function(index){
-        $(this).css('background',color_list_ty0[index]);
+        $(this).css('background',color_list_ty2[index]);
     });
     $('.dram3').children('li').each(function(index){
         $(this).css('background',color_list_ty1[index]);
@@ -67,6 +77,9 @@ $(function(){
     document.addEventListener("touchstart",prevent,false);
     document.addEventListener("touchmove",prevent,false);
     document.addEventListener("touchend",prevent,false);
+    document.addEventListener("gesturestart",prevent,false);
+    document.addEventListener("gesturechange",prevent,false);
+    document.addEventListener("gestureend",prevent,false);
+  
 
- 
 });
