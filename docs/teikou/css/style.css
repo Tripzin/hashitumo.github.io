@@ -1,11 +1,11 @@
 body{
 
     width:99%;
-    height:200px;
+
 }
 #dram{
     margin-top:20%;
-    height:95%;
+    height:200px;
     width:100%;
     background: #deb887;
     display: flex;
