@@ -61,7 +61,7 @@ $(function(){
         $(this).flickEndless({
             vertical: true,
             increment:5,
-            ratio:10
+            ratio:5
         ,
         onPageChange: function(){
             num_list[index] = this.page;
