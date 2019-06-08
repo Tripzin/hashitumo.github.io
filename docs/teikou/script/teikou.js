@@ -1,4 +1,5 @@
 $(function(){
+
     function calom(nums){
         var diti = parseInt(nums[0]-1);
         var dni = parseInt(nums[1]-1);
@@ -33,7 +34,7 @@ $(function(){
 
         return String(Math.floor((diti*10+dni)*10**dsan*10)/10)+'Ω 誤差±'+dyon+"%";
     }
-
+    /**ドラムロールの設定 */
     var num_list = [];
     var color_list_ty0 = ['black','brown','red','orange','yellow',
                       'green','blue','magenta','gray','white'];
@@ -44,42 +45,82 @@ $(function(){
 
     $('.dram0').children('li').each(function(index){
         $(this).css('background',color_list_ty0[index]);
+        $('.dram0_button').children('li').eq(index).css("background",color_list_ty0[index]);    
     });
     $('.dram1').children('li').each(function(index){
         $(this).css('background',color_list_ty0[index]);
+        $('.dram1_button').children('li').eq(index).css("background",color_list_ty0[index]);    
     });
     $('.dram2').children('li').each(function(index){
         $(this).css('background',color_list_ty2[index]);
+        $('.dram2_button').children('li').eq(index).css("background",color_list_ty2[index]);
     });
     $('.dram3').children('li').each(function(index){
         $(this).css('background',color_list_ty1[index]);
+        $('.dram3_button').children('li').eq(index).css("background",color_list_ty1[index]);
     });
 
-
+    //ボタンを押して任意の数だけドラムロールを回すことができるかテスト
     
+    //第1桁～第4桁
     $("#dram").children('div').each(function(index){
         $(this).flickEndless({
             vertical: true,
             increment:5,
             ratio:3
-        ,
-        onPageChange: function(){
-            num_list[index] = this.page;
-            var ans = calom(num_list);
-            $('.ans').html(ans);
-        }    
+            ,
+            onPageChange: function(){
+                num_list[index] = this.page;
+                var ans = calom(num_list);
+                $('.ans').html(ans);
+            }    
         });
+        
+        
     });
+    /**4つの目の要素のinnerHTMLはインデックスとしてそのまま使用できない */
+    var dyons_num = {"±1":0,"±2":1,"±5":2,"±10":3,"±20":4};
+    var mtpos,drampos;
+    $(".buttons").children('div').each(function(ind){
+            $(this).children('li').children('div').each(function(index){
+                $(this).click(function(){
+                /**
+                 move_amount
+                ドラムの位置がdramposでボタンを押してmtposに移動したいとき、
+                moveamount = mtpos - dramposになる
+                */
+                    drampos = num_list[ind] - 1;
+
+                    if(ind != 3){
+                    mtpos = parseInt($(this)[0].innerHTML);
+                    }
+                    else{
+                        mtpos = dyons_num[$(this)[0].innerHTML];
+                    }
+
+
+                    var move_amount =  mtpos - drampos;
+                    if (move_amount > 0){
+                        $('.guru').eq(ind).flickEndless('next',move_amount);
+                    }
+                    else if(move_amount < 0){
+                        $('.guru').eq(ind).flickEndless('prev',-move_amount);
+                    }
+                    return false;
+                });
+            });
+        });
+   
     //IOS用の設定
     function prevent(e){
         event.preventDefault();
     }
-    document.addEventListener("touchstart",prevent,false);
-    document.addEventListener("touchmove",prevent,false);
-    document.addEventListener("touchend",prevent,false);
-    document.addEventListener("gesturestart",prevent,false);
-    document.addEventListener("gesturechange",prevent,false);
-    document.addEventListener("gestureend",prevent,false);
+    document.addEventListener("touchstart",prevent,{passive:false});
+    document.addEventListener("touchmove",prevent,{passive:false});
+    document.addEventListener("touchend",prevent,{passive:false});
+    document.addEventListener("gesturestart",prevent,{passive:false});
+    document.addEventListener("gesturechange",prevent,{passive:false});
+    document.addEventListener("gestureend",prevent,{passive:false});
   
 
 });
