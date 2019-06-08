@@ -1,7 +1,13 @@
+html{
+    height: 100%;
+}
 body{
+    height: 100%;
     margin:0;
     width:100%;
+    background: #c6eaff;
 }
+
 #dram{
     height:200px;
     background: #deb887;
@@ -9,12 +15,21 @@ body{
     justify-content: space-around;
     padding:0px 0px 0px 0px;
     border:1px solid black;
-    margin:10px 0 10px -30px;
+    margin:5px 0 0px -30px;
 }
 #dram > div{
     width: 20%;
     height: 100%;
     padding:0,0;
+}
+
+.ans{
+    font-size:100%;
+    height:30px;
+    border:5px dashed greenyellow;
+    background: lightgoldenrodyellow;
+    margin-top:auto;
+    text-align:center;
 }
 
 
@@ -24,38 +39,34 @@ ul{
 li{
     list-style-type: none;
     height:100%;
-    text-align: center;
+    display: block;
+    overflow: hidden;
+    text-indent: 100%;
 }
-li > div{
-    font-size: 30px;
-}
-.ans{
-    font-size:70px;
-    height:100px;
-    border:5px dashed greenyellow;
-    background: lightgoldenrodyellow;
-    margin-top:10px;
-    padding: 20px 0;
-    text-align:center;
-}
+
 .buttons{
     display :flex;
+    height: 80%;
 }
 
 .buttons > div{
-    width:30%;
-    height: 15%;
+    width:50%;
+    height: 10%;
 }
 
 .dram0_button,.dram1_button,.dram2_button{
         margin-right: 10px;
     }
-li{
+
+.buttons{
     position: relative;
 }
 
 li a{
-    color: rgb(102, 226, 65);
-    text-decoration: none;
     display: block;
+    overflow: hidden;
+    text-indent: 100%;
+}
+.buttons div li{
+    height: 50%;
 }
