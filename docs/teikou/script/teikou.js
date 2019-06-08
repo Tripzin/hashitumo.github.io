@@ -1,5 +1,17 @@
 $(function(){
 
+    var win_w = window.innerWidth;
+    var win_h = window.innerHeight;
+    var aspect = win_w/win_h;
+    if (aspect > 1){
+        $(".buttons").css("margin-top",'25%');
+        $('.all').css("height","5%");
+    }
+    else{
+        $(".buttons").css("margin-top","-30px");
+        $('.all').css("height","20%");
+    }
+
     function calom(nums){
         var diti = parseInt(nums[0]-1);
         var dni = parseInt(nums[1]-1);
