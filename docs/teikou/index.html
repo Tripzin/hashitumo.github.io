@@ -1,68 +1,52 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta namae='viewport' content="width=device-width,initial-scala=1.0">
-        <link rel="stylesheet" type = text/css href ="css/style.css"></style>
-        <script type= "text/javascript" src = "script/jquery.js"></script>
-        <script type= "text/javascript" src ="script/jquery.flickEndless-1.0.3-min.js"></script>
-        <script type = "text/javascript" src = "script/teikou.js"></script>
-    </head>
-    <body>
-        <div class = "all">
-        <div class="ans"></div>
-        <div id = "dram">
-            <div class = 'guru'>
-                <ul class= 'dram0'>
-                    <li><div>0</div></li>
-                    <li><div>1</div></li>
-                    <li><div>2</div></li>
-                    <li><div>3</div></li>
-                    <li><div>4</div></li>
-                    <li><div>5</div></li>
-                    <li><div>6</div></li>
-                    <li><div>7</div></li>
-                    <li><div>8</div></li>
-                    <li><div>9</div></li>
-                </ul>
-            </div>
-            <div class = 'guru'>
-                <ul class = 'dram1'>
-                    <li><div>0</div></li>
-                    <li><div>1</div></li>
-                    <li><div>2</div></li>
-                    <li><div>3</div></li>
-                    <li><div>4</div></li>
-                    <li><div>5</div></li>
-                    <li><div>6</div></li>
-                    <li><div>7</div></li>
-                    <li><div>8</div></li>
-                    <li><div>9</div></li>
-                </ul>
-            </div>
-            <div class ='guru'>
-                <ul class ='dram2'>
-                    <li><div>0</div></li>
-                    <li><div>1</div></li>
-                    <li><div>2</div></li>
-                    <li><div>3</div></li>
-                    <li><div>4</div></li>
-                    <li><div>5</div></li>
-                    <li><div>6</div></li>
-                    <li><div>7</div></li>
-                    <li><div>8</div></li>
-                </ul>
-            </div>
-            <div class = 'guru'>
-                <ul class = 'dram3' style="padding-right: 40px;">
-                    <li><div>±1</div></li>
-                    <li><div>±2</div></li>
-                    <li><div>±5</div></li>
-                    <li><div>±10</div></li>
-                    <li><div>±20</div></li>
-                </ul>
-            </div>
-        </div>
-        </div>
-    </body>
-</html>
+body{
+    margin:0;
+    width:100%;
+}
+#dram{
+    height:200px;
+    background: #deb887;
+    display: flex;
+    justify-content: space-around;
+    padding:0px 0px 0px 0px;
+    border:1px solid black;
+    margin:10px 0 10px -30px;
+}
+#dram > div{
+    width: 20%;
+    height: 100%;
+    padding:0,0;
+}
+
+
+ul{
+    height: 100%;
+}
+li{
+    list-style-type: none;
+    height:100%;
+    text-align: center;
+}
+li > div{
+    font-size: 30px;
+}
+.ans{
+    font-size:70px;
+    height:100px;
+    border:5px dashed greenyellow;
+    background: lightgoldenrodyellow;
+    margin-top:10px;
+    padding: 20px 0;
+    text-align:center;
+}
+.buttons{
+    display :flex;
+}
+
+.buttons > div{
+    width:30%;
+    height: 15%;
+}
+
+.dram0_button,.dram1_button,.dram2_button{
+        margin-right: 10px;
+    }
