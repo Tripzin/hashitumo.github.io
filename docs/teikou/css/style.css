@@ -24,14 +24,17 @@ body{
 }
 
 .ans{
-    font-size:100%;
-    height:30px;
-    border:5px dashed greenyellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 500%;
+    height: 200px;
+    border: 5px dashed greenyellow;
     background: lightgoldenrodyellow;
-    margin-top:auto;
-    text-align:center;
+    margin: 0;
+    text-align: center;
+    overflow: hidden;
 }
-
 
 ul{
     height: 100%;
@@ -46,12 +49,11 @@ li{
 
 .buttons{
     display :flex;
-    height: 80%;
+    height: 74%;
 }
 
 .buttons > div{
     width:50%;
-    height: 10%;
 }
 
 .dram0_button,.dram1_button,.dram2_button{
