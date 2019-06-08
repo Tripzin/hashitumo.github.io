@@ -9,7 +9,7 @@ $(function(){
         $(".buttons").remove();
     }
     else{
-        $(".buttons").css("margin-top","14%");
+        $(".buttons").css("margin-top","16%");
         $('.all').css("height","17%");
         $(".buttons > div").css("height","20%");
     }
