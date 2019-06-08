@@ -4,12 +4,12 @@ body{
 }
 #dram{
     height:200px;
-    width:100%;
     background: #deb887;
     display: flex;
     justify-content: space-around;
     padding:0px 0px 0px 0px;
     border:1px solid black;
+    margin:10px 0 10px -30px;
 }
 #dram > div{
     width: 20%;
@@ -19,10 +19,10 @@ body{
 
 
 ul{
-    list-style-type: none;
     height: 100%;
 }
 li{
+    list-style-type: none;
     height:100%;
     text-align: center;
 }
@@ -38,3 +38,15 @@ li > div{
     padding: 20px 0;
     text-align:center;
 }
+.buttons{
+    display :flex;
+}
+
+.buttons > div{
+    width:30%;
+    height: 15%;
+}
+
+.dram0_button,.dram1_button,.dram2_button{
+        margin-right: 10px;
+    }
