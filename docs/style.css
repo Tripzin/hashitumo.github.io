@@ -1,43 +1,52 @@
-@charset "UTF-8";
-@import url(https://fonts.googleapis.com/css?family=Noto+Sans+JP);
 body{
-    position: absolute;
-    font-family: 'Noto Sans JP', sans-serif;
-    background: #FFFAFA;
+    margin:0;
+    width:100%;
 }
-h1{
-    font-size:20px;
-    color: #0000A1;
+#dram{
+    height:200px;
+    background: #deb887;
+    display: flex;
+    justify-content: space-around;
+    padding:0px 0px 0px 0px;
+    border:1px solid black;
+    margin:10px 0 10px -30px;
+}
+#dram > div{
+    width: 20%;
+    height: 100%;
+    padding:0,0;
 }
 
-.key,.left_node,.right_node{
-    position: absolute;
+
+ul{
+    height: 100%;
+}
+li{
+    list-style-type: none;
+    height:100%;
     text-align: center;
-    height:50px;
-    width: 50px;
-    border:5px solid darkblue;
-    font-size: 35px;
 }
-.left_node,.right_node{
-    border-radius: 50%;
+li > div{
+    font-size: 30px;
 }
-
-#canvas{
-    background:#FFF;
-    box-shadow: 2px 2px 4px -4px gray inset;
+.ans{
+    font-size:70px;
+    height:100px;
+    border:5px dashed greenyellow;
+    background: lightgoldenrodyellow;
+    margin-top:10px;
+    padding: 20px 0;
+    text-align:center;
 }
-
-#test1{
-    display: table-caption;
-}
-
 .buttons{
-    font-weight: bold;
+    display :flex;
 }
 
-.textboxs{
-    width:360px;
-    height:30px;
-    font-size:25px;
-    font-family: 'Noto Sans JP', sans-serif;
+.buttons > div{
+    width:30%;
+    height: 15%;
 }
+
+.dram0_button,.dram1_button,.dram2_button{
+        margin-right: 10px;
+    }
