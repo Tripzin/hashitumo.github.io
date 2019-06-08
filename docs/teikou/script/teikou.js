@@ -82,8 +82,8 @@ $(function(){
     var dyons_num = {"±1":0,"±2":1,"±5":2,"±10":3,"±20":4};
     var mtpos,drampos;
     $(".buttons").children('div').each(function(ind){
-            $(this).children('li').children('div').each(function(index){
-                $(this).on('click',this,function(){
+            $(this).children('li').children('a').each(function(index){
+                $(this).on('click touchstart',function(){
                 /**
                  move_amount
                 ドラムの位置がdramposでボタンを押してmtposに移動したいとき、
@@ -115,7 +115,7 @@ $(function(){
     function prevent(e){
         event.preventDefault();
     }
-    document.addEventListener("touchstart",prevent,{passive:false});
+    //document.addEventListener("touchstart",prevent,{passive:false});
     document.addEventListener("touchmove",prevent,{passive:false});
     document.addEventListener("touchend",prevent,{passive:false});
     document.addEventListener("gesturestart",prevent,{passive:false});
