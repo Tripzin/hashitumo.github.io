@@ -83,7 +83,7 @@ $(function(){
     var mtpos,drampos;
     $(".buttons").children('div').each(function(ind){
             $(this).children('li').children('div').each(function(index){
-                $(this).click(function(){
+                $(this).on('click',this,function(){
                 /**
                  move_amount
                 ドラムの位置がdramposでボタンを押してmtposに移動したいとき、
