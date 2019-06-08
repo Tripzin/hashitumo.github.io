@@ -4,12 +4,14 @@ $(function(){
     var win_h = window.innerHeight;
     var aspect = win_w/win_h;
     if (aspect > 1){
-        $(".buttons").css("margin-top",'25%');
+        $(".buttons").css("margin-top",'30%');
         $('.all').css("height","5%");
+        $(".buttons").remove();
     }
     else{
-        $(".buttons").css("margin-top","-30px");
-        $('.all').css("height","20%");
+        $(".buttons").css("margin-top","14%");
+        $('.all').css("height","17%");
+        $(".buttons > div").css("height","20%");
     }
 
     function calom(nums){
