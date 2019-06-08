@@ -37,7 +37,6 @@ li > div{
     margin-top:10px;
     padding: 20px 0;
     text-align:center;
-    white-space:nowarp;
 }
 .buttons{
     display :flex;
@@ -51,3 +50,12 @@ li > div{
 .dram0_button,.dram1_button,.dram2_button{
         margin-right: 10px;
     }
+li{
+    position: relative;
+}
+
+li a{
+    color: rgb(102, 226, 65);
+    text-decoration: none;
+    display: block;
+}
