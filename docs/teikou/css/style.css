@@ -68,6 +68,7 @@ li a{
     display: block;
     overflow: hidden;
     text-indent: 100%;
+    height: 100%;
 }
 .buttons div li{
     height: 50%;
