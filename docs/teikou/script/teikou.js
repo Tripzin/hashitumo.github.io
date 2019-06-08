@@ -9,7 +9,7 @@ $(function(){
         $(".buttons").remove();
     }
     else{
-        $(".buttons").css("margin-top","16%");
+        $(".buttons").css("margin-top","14%");
         $('.all').css("height","17%");
         $(".buttons > div").css("height","20%");
     }
@@ -97,7 +97,7 @@ $(function(){
     var mtpos,drampos;
     $(".buttons").children('div').each(function(ind){
             $(this).children('li').children('a').each(function(index){
-                $(this).on('click touchstart',function(){
+                $(this).on('click touchstart touchend',function(){
                 /**
                  move_amount
                 ドラムの位置がdramposでボタンを押してmtposに移動したいとき、
@@ -131,7 +131,7 @@ $(function(){
     }
     //document.addEventListener("touchstart",prevent,{passive:false});
     document.addEventListener("touchmove",prevent,{passive:false});
-    document.addEventListener("touchend",prevent,{passive:false});
+    //document.addEventListener("touchend",prevent,{passive:false});
     document.addEventListener("gesturestart",prevent,{passive:false});
     document.addEventListener("gesturechange",prevent,{passive:false});
     document.addEventListener("gestureend",prevent,{passive:false});
