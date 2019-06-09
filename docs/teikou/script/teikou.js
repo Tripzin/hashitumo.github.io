@@ -46,7 +46,7 @@ $(function(){
                 break;
             case 3:
                 dyon = 10;
-                break
+                break;
             case 4:
                 dyon = 20;
         }
