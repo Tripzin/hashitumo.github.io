@@ -134,7 +134,7 @@ $(function(){
         event.preventDefault();
     }
     //document.addEventListener("touchstart",prevent,{passive:false});
-    document.addEventListener("touchmove",prevent,{passive:false});
+    //document.addEventListener("touchmove",prevent,{passive:false});
     //document.addEventListener("touchend",prevent,{passive:false});
     document.addEventListener("gesturestart",prevent,{passive:false});
     document.addEventListener("gesturechange",prevent,{passive:false});
