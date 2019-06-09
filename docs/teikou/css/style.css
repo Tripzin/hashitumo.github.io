@@ -15,7 +15,7 @@ body{
     justify-content: space-around;
     padding:0px 0px 0px 0px;
     border: 1px solid #7b7b7b;
-    margin:5px 0 10px -30px;
+    margin:220px 0 10px -30px;
     border-radius: 5%;
 }
 #dram > div{
@@ -29,7 +29,12 @@ body{
 
 
 .ans{
-    display: flex;
+    position:fixed;
+    width: 100%;
+    top:0px;
+    left:0px;
+    display: inline-flex;
+    z-index: 10;
     color: #004b4c;
     align-items: center;
     justify-content: center;
@@ -100,7 +105,6 @@ li a{
 
 @media(orientation:portrait){
     .buttons{
-        margin-top:30%;
         height: 100%;
     }
     .all{
