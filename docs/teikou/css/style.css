@@ -14,26 +14,33 @@ body{
     display: flex;
     justify-content: space-around;
     padding:0px 0px 0px 0px;
-    border:1px solid black;
-    margin:5px 0 0px -30px;
+    border: 1px solid #7b7b7b;
+    margin:5px 0 3px -30px;
+    border-radius: 5%;
 }
 #dram > div{
-    width: 20%;
+    width: 100%;
     height: 100%;
-    padding:0,0;
+    padding: 0 0;
+    margin: 0px 0 0 20px;
 }
+
+
+
 
 .ans{
     display: flex;
+    color: #004b4c;
     align-items: center;
     justify-content: center;
-    font-size: 500%;
+    font-size: 630%;
     height: 200px;
-    border: 5px dashed greenyellow;
-    background: lightgoldenrodyellow;
+    border: 5px dashed #c6eaff;
+    background: whitesmoke;
     margin: 0;
     text-align: center;
     overflow: hidden;
+    font-family: 'Encode Sans Semi Expanded', sans-serif;
 }
 
 ul{
@@ -41,6 +48,7 @@ ul{
 }
 li{
     list-style-type: none;
+    width: 160.5px;
     height:100%;
     display: block;
     overflow: hidden;
@@ -48,19 +56,18 @@ li{
 }
 
 .buttons{
-    display :flex;
-    height: 74%;
+    height: 12.5%;
 }
 
 .buttons > div{
-    width:50%;
+    margin: 0px 63px -21px 28px;
 }
 
-.dram0_button,.dram1_button,.dram2_button{
-        margin-right: 10px;
-    }
+
+
 
 .buttons{
+    display :flex;
     position: relative;
 }
 
@@ -68,8 +75,39 @@ li a{
     display: block;
     overflow: hidden;
     text-indent: 100%;
-    height: 100%;
+    height: 85%;
 }
 .buttons div li{
     height: 50%;
+    width:161.5px;
+    border-radius:10%;
+    margin-top:10px;
+    margin-bottom:10px;
+    box-shadow:4px 4px #94d8ffd9;    
+}
+
+.buttons div:last-child{
+    width:10px;
+}
+
+
+@media (orientation: landscape){
+    .buttons{
+        display:none;    
+    }
+
+
+@media(orientation:portrait){
+    .buttons{
+        margin-top:13%;
+        height:12.5%;
+    }
+    .all{
+        height:17%;
+    }
+
+    .buttons > div{
+        display:block;
+        height:10%;
+    }
 }
