@@ -49,6 +49,7 @@ $(function(){
                 break;
             case 4:
                 dyon = 20;
+                break;
         }
 
         return String(Math.floor((diti*10+dni)*10**dsan*10)/10)+'Ω ±'+dyon+"%";
