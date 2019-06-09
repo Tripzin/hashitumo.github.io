@@ -61,7 +61,7 @@ $(function(){
     var color_list_ty1 = ['brown','red','gold','silver','snow'];
 
     var color_list_ty2 = ['black','brown','red','orange','yellow',
-    'green','#0e72cf','gold','silver'];
+    'green','#0e72cf','magenta','gray','white','gold','silver'];
 
     $('.dram0').children('li').each(function(index){
         $(this).css('background',color_list_ty0[index]);
