@@ -100,7 +100,7 @@ li a{
 
 @media(orientation:portrait){
     .buttons{
-        margin-top:20%;
+        margin-top:0%;
         height: 100%;
     }
     .all{
