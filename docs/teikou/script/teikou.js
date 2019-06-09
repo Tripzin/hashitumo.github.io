@@ -25,10 +25,10 @@ $(function(){
         var dyon = parseInt(nums[3]-1);
 
         switch(dsan){
-            case 7:
+            case 10:
                 dsan = -1;
                 break;
-            case 8:
+            case 11:
                 dsan = -2;
                 break;
         }
