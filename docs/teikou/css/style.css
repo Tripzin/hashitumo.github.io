@@ -29,7 +29,7 @@ body{
 
 .ans{
     position:fixed;
-    width:100%;
+
     top:0px;
     left:0px;
     z-index: 1;
@@ -40,6 +40,7 @@ body{
     justify-content: center;
     font-size: 630%;
     height: 200px;
+    width:100%;
     border: 5px dashed #c6eaff;
     background: whitesmoke;
     margin: 0;
