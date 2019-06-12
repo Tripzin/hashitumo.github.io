@@ -2,19 +2,24 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <meta namae='viewport' content="width=device-width,initial-scala=1.0">
+        <title>カラー抵抗値　読むアプリ</title>
+        <meta name ="description" content="手元にある抵抗のカラーコードを合わせるだけで、抵抗値がわかります！
+        PCでアクセスするとレイアウトが崩れる可能性があります。">
+        <meta namae="viewport" content="width=device-width,initial-scala=1.0">
         <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Expanded&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type = text/css href ="css/style.css"></style>
+        <link rel="stylesheet" type = "text/css" href ="css/style.css">
         <script type= "text/javascript" src = "script/jquery.js"></script>
         <script type= "text/javascript" src ="script/jquery.flickEndless-1.0.3-min.js"></script>
         <script type = "text/javascript" src = "script/teikou.js"></script>
     </head>
     <body>
         <div class = "all">
-                <p class='ans'></p>
+            <div class = "ans">
+                <p class="ans_write"></p>
+            </div>
             <div id = "dram">
-                <div class = 'guru'>
-                    <ul class= 'dram0'>
+                <div class = "guru">
+                    <ul class= "dram0">
                         <li><div>0</div></li>
                         <li><div>1</div></li>
                         <li><div>2</div></li>
@@ -27,8 +32,8 @@
                         <li><div>9</div></li>
                     </ul>
                 </div>
-                <div class = 'guru'>
-                    <ul class = 'dram1'>
+                <div class = "guru">
+                    <ul class = "dram1">
                         <li><div>0</div></li>
                         <li><div>1</div></li>
                         <li><div>2</div></li>
@@ -41,8 +46,8 @@
                         <li><div>9</div></li>
                     </ul>
                 </div>
-                <div class ='guru'>
-                    <ul class ='dram2'>
+                <div class ="guru">
+                    <ul class ="dram2">
                         <li><div>0</div></li>
                         <li><div>1</div></li>
                         <li><div>2</div></li>
@@ -58,8 +63,8 @@
                      
                     </ul>
                 </div>
-                <div class = 'guru'>
-                    <ul class = 'dram3' style="padding-right: 40px;">
+                <div class = "guru">
+                    <ul class = "dram3" style="padding-right: 40px;">
                             <li><div>±1</div></li>
                             <li><div>±2</div></li>
                             <li><div>±5</div></li>
@@ -69,51 +74,51 @@
                     </div>
                 </div>
             </div>
-            <div class='buttons'>    
+            <div class="buttons">    
                 <div class = "dram0_button">
-                    <li><a href='void(0)'>0</a></li>
-                    <li><a href='void(0)'>1</a></li>
-                    <li><a href='void(0)'>2</a></li>
-                    <li><a href='void(0)'>3</a></li>
-                    <li><a href='void(0)'>4</a></li>
-                    <li><a href='void(0)'>5</a></li>
-                    <li><a href='void(0)'>6</a></li>
-                    <li><a href='void(0)'>7</a></li>
-                    <li><a href='void(0)'>8</a></li>
-                    <li><a href='void(0)'>9</a></li>
+                    <li><a href="void(0)">0</a></li>
+                    <li><a href="void(0)">1</a></li>
+                    <li><a href="void(0)">2</a></li>
+                    <li><a href="void(0)">3</a></li>
+                    <li><a href="void(0)">4</a></li>
+                    <li><a href="void(0)">5</a></li>
+                    <li><a href="void(0)">6</a></li>
+                    <li><a href="void(0)">7</a></li>
+                    <li><a href="void(0)">8</a></li>
+                    <li><a href="void(0)">9</a></li>
                 </div>
                 <div class = "dram1_button">
-                    <li><a href='void(0)'>0</a></li>
-                    <li><a href='void(0)'>1</a></li>
-                    <li><a href='void(0)'>2</a></li>
-                    <li><a href='void(0)'>3</a></li>
-                    <li><a href='void(0)'>4</a></li>
-                    <li><a href='void(0)'>5</a></li>
-                    <li><a href='void(0)'>6</a></li>
-                    <li><a href='void(0)'>7</a></li>
-                    <li><a href='void(0)'>8</a></li>
-                    <li><a href='void(0)'>9</a></li>
+                    <li><a href="void(0)">0</a></li>
+                    <li><a href="void(0)">1</a></li>
+                    <li><a href="void(0)">2</a></li>
+                    <li><a href="void(0)">3</a></li>
+                    <li><a href="void(0)">4</a></li>
+                    <li><a href="void(0)">5</a></li>
+                    <li><a href="void(0)">6</a></li>
+                    <li><a href="void(0)">7</a></li>
+                    <li><a href="void(0)">8</a></li>
+                    <li><a href="void(0)">9</a></li>
                 </div>
                 <div class = "dram2_button">
-                    <li><a href='void(0)'>0</a></li>
-                    <li><a href='void(0)'>1</a></li>
-                    <li><a href='void(0)'>2</a></li>
-                    <li><a href='void(0)'>3</a></li>
-                    <li><a href='void(0)'>4</a></li>
-                    <li><a href='void(0)'>5</a></li>
-                    <li><a href='void(0)'>6</a></li>
-                    <li><a href='void(0)'>7</a></li>
-                    <li><a href='void(0)'>8</a></li>
-                    <li><a href='void(0)'>9</a></li>
-                    <li><a href='void(0)'>10</a></li>
-                    <li><a href='void(0)'>11</a></li>
+                    <li><a href="void(0)">0</a></li>
+                    <li><a href="void(0)">1</a></li>
+                    <li><a href="void(0)">2</a></li>
+                    <li><a href="void(0)">3</a></li>
+                    <li><a href="void(0)">4</a></li>
+                    <li><a href="void(0)">5</a></li>
+                    <li><a href="void(0)">6</a></li>
+                    <li><a href="void(0)">7</a></li>
+                    <li><a href="void(0)">8</a></li>
+                    <li><a href="void(0)">9</a></li>
+                    <li><a href="void(0)">10</a></li>
+                    <li><a href="void(0)">11</a></li>
                 </div>
                 <div class = "dram3_button">
-                    <li><a href='void(0)'>±1</a></li>
-                    <li><a href='void(0)'>±2</a></li>
-                    <li><a href='void(0)'>±5</a></li>
-                    <li><a href='void(0)'>±10</a></li>
-                    <li><a href='void(0)'>±20</a></li>
+                    <li><a href="void(0)">±1</a></li>
+                    <li><a href="void(0)">±2</a></li>
+                    <li><a href="void(0)">±5</a></li>
+                    <li><a href="void(0)">±10</a></li>
+                    <li><a href="void(0)">±20</a></li>
                 </div>
             </div>
         </body>
