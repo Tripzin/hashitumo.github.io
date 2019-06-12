@@ -27,14 +27,13 @@ body{
 
 
 
-
 .ans{
     position:fixed;
-    width: 100%;
     top:0px;
     left:0px;
-    display: inline-flex;
-    z-index: 10;
+    z-index: 1;
+}
+.ans_write{
     color: #004b4c;
     align-items: center;
     justify-content: center;
@@ -43,10 +42,15 @@ body{
     border: 5px dashed #c6eaff;
     background: whitesmoke;
     margin: 0;
+    display: inline-flex;
     text-align: center;
     overflow: hidden;
     font-family: 'Encode Sans Semi Expanded', sans-serif;
 }
+.title_name{
+    font-size: 100%;
+}
+
 
 ul{
     height: 100%;
@@ -65,7 +69,7 @@ li{
 }
 
 .buttons > div{
-    margin: 0px 63px -21px 28px;
+    margin: 0px 6.5% -21px 28px;
 }
 
 
@@ -96,7 +100,7 @@ li a{
 }
 
 
-
+@media only screen and (max-device-width:480px){
 @media (orientation: landscape){
     .buttons{
         display:none;    
@@ -114,5 +118,7 @@ li a{
     .buttons > div{
         display:block;
         height: 11%;
+        margin: 0px 63px -21px 28px;
     }
+}
 }
