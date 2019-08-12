@@ -2,119 +2,19 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8">
-    <title>サンプル</title>
+    <title>トップページ</title>
     <meta name ="viewpoint" content="width=device-width">
     <link rel ="stylesheet" href="css/bootstrap.min.css">
 
 
   </head>
   <body>
-    <!--ナビゲーションバーは.navbarクラスで生成される
-        ナビゲーション横配置から縦配置に変更する際の
-        画面サイズは.navbar-expand-xl|lg|md|smで設定する
-        .navbar-expandがなければ最初から縦配置になる。
-        ナビゲーションにリンクを追加したい場合はulタグにクラスnavbar-navを適用し、
-        その子にnav-itemクラスを追加したliタグ、さらにその子にnav-linkクラスと、
-        href属性(リンク先を追加すること)を追加すればよい。
-        -->
-    <a>標準的なナビゲーションバー</a>
-    <nav class="navbar navbar-expand-sm bg-light">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#">google</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">yahoo</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">youtube</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">twitter</a>
-        </li>
-
-      </ul>
-    </nav>
-    <!--中央揃えはnavタグにjustify-content-centerクラスを追加する-->
-    <a>中央揃え</a>
-    <nav class="navbar navbar-expand-sm bg-light justify-content-center">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#">google</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">yahoo</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">youtube</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">twitter</a>
-        </li>
-      </ul>
-      </nav>
-    <!--配色
-        bg-colorを使えばナビゲーションバーの背景色を変更できる
-        .bg-primary 青
-        ,.bg-success 緑
-        ,.bg-info 鴨の羽色
-        ,.bg-warning 黄色
-        ,.bg-danger 赤
-        ,.bg-secondary 灰色
-        ,.bg-dark 黒 navbar-darkと併用する
-        ,.bg-light 白 navbar-lightと併用する
-        またnavbar-lightで、文字色が黒
-            navbar-darkで、文字色が白になる。
-        -->
-    <a>配色変更</a>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#">google</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">yahoo</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">youtube</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">twitter</a>
-        </li>
-
-      </ul>
-      </nav>
-      <!--navbar-brandクラスはナビゲーションバーの先頭に配置太文字や画像が使用できる-->
-    <!--ハンバーガーアイコンの生成にはbuttonタグを使用する。ボタンタグにclass="navbar-toggler",data-toggle="collaspe"
-        またハンバーガーアイコンにする対象のナビゲーションに追加されたid属性をdata-target="#thetarget"で指定する。
-        対象のナビゲーション(ul)はdivタグで囲み、divタグにはclass="cpllaspe navbar-collapseとid=thetargetを追加する。"-->
-    <a>ハンバーガーアイコン</a>
-    <nav class="navbar navbar-expand-sm bg-success navbar-dark">
-      <!--まとめたくないものはdivタグの外に記述する-->
-      <a class="nav-brand" href="#">TEST</a>
-      <!--ボタンの生成-->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#targettest">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="targettest">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">google</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#">yahoo</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#">youtube</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#">twitter</a>
-          </li>
-  
-         </ul>
-        </div>
-    </nav>
+    <div>
+      <a>トップページ<br>～製作中～</a>
+    </div>
+    <a class="btn btn-primary" href="https://tripzin.github.io/notebook/toppage/pages/bootstrap/navgationbar/index.html">
+      NavigationNar
+    </a>
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
   </body>
