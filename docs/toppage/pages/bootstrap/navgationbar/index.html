@@ -3,212 +3,230 @@
   <head>
     <meta charset="UTF-8">
     <title>サンプル</title>
-    <meta name ="viewpoint" content="width=device-width">
+    <meta name ="viewport" content="width=device-width,initial-scale=1">
     <link rel ="stylesheet" href="../../../css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/stylesheet.css">
-
   </head>
   <body>
-    <a class=''>・標準的なナビゲーションバー</a>
-    <nav class="navbar navbar-expand-sm bg-light">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#">google</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">yahoo</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">youtube</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">twitter</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="message-index">
-      <a class="comments">ナビゲーションバーは.navbarクラスで生成される
-        ナビゲーション横配置から縦配置に変更する際の
-        画面サイズは.navbar-expand-xl|lg|md|smで設定する
-        .navbar-expandがなければ最初から縦配置になる。<br>
-        ナビゲーションにリンクを追加したい場合はulタグにクラスnavbar-navを適用し、
-        その子にnav-itemクラスを追加したliタグ、さらにその子にnav-linkクラスと、
-        href属性(リンク先を追加すること)を追加すればよい。
-      </a>
-    </div>
-    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#code1">source code</button>
-    <pre class="prettyprint lang-html linenums collapse" id="code1">
-      &lt;nav class=&quot;navbar navbar-expand-sm bg-light&quot;&gt;
-        &lt;ul class=&quot;navbar-nav&quot;&gt;
-          &lt;li class=&quot;nav-item&quot;&gt;
-            &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;google&lt;/a&gt;
-          &lt;/li&gt;
-          &lt;li class=&quot;nav-item&quot;&gt;
-            &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;yahoo&lt;/a&gt;
-          &lt;/li&gt;
-          &lt;li class=&quot;nav-item&quot;&gt;
-            &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;youtube&lt;/a&gt;
-          &lt;/li&gt;
-          &lt;li class=&quot;nav-item&quot;&gt;
-            &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;twitter&lt;/a&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/nav&gt;<br></pre>
-      <span><br>・中央揃え</span>
-      <nav class="navbar navbar-expand-sm bg-light justify-content-center">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">google</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">yahoo</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">youtube</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">twitter</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="message-index">
-        <a class="comments">
-          中央揃えはnavタグにjustify-content-centerクラスを追加する
-        </a>
-      </div>
+    <div class="row">
+      <div class="col">
 
-        <!--配色
-        bg-colorを使えばナビゲーションバーの背景色を変更できる
-        .bg-primary 青
-        ,.bg-success 緑
-        ,.bg-info 鴨の羽色
-        ,.bg-warning 黄色
-        ,.bg-danger 赤
-        ,.bg-secondary 灰色
-        ,.bg-dark 黒 navbar-darkと併用する
-        ,.bg-light 白 navbar-lightと併用する
-        またnavbar-lightで、文字色が黒
-            navbar-darkで、文字色が白になる。
-        -->
-    <a><br>・配色変更</a>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#">google</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">yahoo</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">youtube</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">twitter</a>
-        </li>
-
-      </ul>
-    </nav>
-    <div class="message-index">
-      <a class="comments">
-          navタグのクラスにbg-colorを追加すればナビゲーションバーの背景色を変更できる。<br>
-          色は次の表の通り。
-      </a>
-      <table border="1">
-        <tr>
-          <th>class</th>
-          <th>color</th>
-        </tr>
-        <tr>
-          <th>.bg-primary</th>
-          <th><a class="bg-primary">Primary</a></th>
-        </tr>
-        <tr>
-            <th>.bg-success</th>
-            <th><a class="bg-success">Success</a></th>
-        </tr>
-        <tr>
-            <th>.bg-info</th>
-            <th><a class="bg-info">Info</a></th>
-        </tr>
-        <tr>
-            <th>.bg-warning</th>
-            <th><a class="bg-warning">Warning</a></th>
-        </tr>
-        <tr>
-            <th>.bg-danger</th>
-            <th><a class="bg-danger">Danger</a></th>
-        </tr>
-        <tr>
-            <th>.bg-secondary</th>
-            <th><a class="bg-secondary">Secondary</a></th>
-        </tr>
-        <tr>
-            <th>.bg-dark</th>
-            <th><a class="bg-dark">Dark</a>
-                <a>※navbar-lightと併用</a>
-            </th>
-        </tr>
-        <tr>
-          <th>.bg-light</th>
-          <th><a class="bg-light">Light</a>
-            <a>※navbar-darkと併用</a>
-          </th>
-        </tr>
-      </table>
-    </div>
-
-    <!--navbar-brandクラスはナビゲーションバーの先頭に配置太文字や画像が使用できる-->
-    <!--ハンバーガーアイコンの生成にはbuttonタグを使用する。ボタンタグにclass="navbar-toggler",data-toggle="collaspe"
-        またハンバーガーアイコンにする対象のナビゲーションに追加されたid属性をdata-target="#thetarget"で指定する。
-        対象のナビゲーション(ul)はdivタグで囲み、divタグにはclass="cpllaspe navbar-collapseとid=thetargetを追加する。"-->
-    <a>・ハンバーガーアイコン</a>
-    <nav class="navbar navbar-expand-sm bg-success navbar-dark">
-      <!--まとめたくないものはdivタグの外に記述する-->
-      <a class="nav-brand" href="#">TEST</a>
-      <!--ボタンの生成-->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#targettest">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="targettest">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">google</a>
-          </li>
-          <li class="nav-item">
+        <a>・標準的なナビゲーションバー</a>
+        <nav class="navbar navbar-expand-sm bg-light">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">google</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#">yahoo</a>
-          </li>
-          <li class="nav-item">
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#">youtube</a>
-          </li>
-          <li class="nav-item">
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#">twitter</a>
-          </li>
-         </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="message-index">
+          <a class="comments">ナビゲーションバーは.navbarクラスで生成される
+            ナビゲーション横配置から縦配置に変更する際の
+            画面サイズは.navbar-expand-xl|lg|md|smで設定する
+            .navbar-expandがなければ最初から縦配置になる。<br>
+            ナビゲーションにリンクを追加したい場合はulタグにクラスnavbar-navを適用し、
+            その子にnav-itemクラスを追加したliタグ、さらにその子にnav-linkクラスと、
+            href属性(リンク先を追加すること)を追加すればよい。
+          </a>
         </div>
-    </nav>
-    <div class="message-index">
-      <a class="comments">
-          ハンバーガーアイコンの生成にはbuttonタグを使用する。<br>ボタンタグにclass="navbar-toggler",data-toggle="collaspe"
-          またハンバーガーアイコンにする対象のナビゲーションに追加されたid属性をdata-target="#thetarget"で指定する。<br>
-          アイコンのデザインはspanタグのクラスで指定する。<br>
-          対象のナビゲーション(ul)はdivタグで囲み、divタグにはclass="cpllaspe navbar-collapseとid=thetargetを追加する。
-      </a>
-    </div>
-    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#code2">source code</button>
-    <pre class="prettyprint lang-html linenums collaspe message-index" id="code2">
-      &lt;!--ボタンの生成--&gt;
-      &lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#targettest&quot;&gt;
-       &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
-      &lt;/button&gt;
+        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#code1">source code</button>
+        <pre class="prettyprint lang-html linenums collapse" id="code1">
+          &lt;nav class=&quot;navbar navbar-expand-sm bg-light&quot;&gt;
+          &lt;ul class=&quot;navbar-nav&quot;&gt;
+          &lt;li class=&quot;nav-item&quot;&gt;
+          &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;google&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;nav-item&quot;&gt;
+          &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;yahoo&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;nav-item&quot;&gt;
+          &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;youtube&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;nav-item&quot;&gt;
+          &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;twitter&lt;/a&gt;
+          &lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;/nav&gt;<br></pre>
+      </div><!--col-->
+    </div><!--row-->
+    <div class="row">
 
-      &lt;!--ナビゲーションバー側の指定--&gt;      
-      &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;targettest&quot;&gt;
-        &lt;ul class=&quot;navbar-nav&quot;&gt;
-        ︙
-      &lt;/div&gt;</pre>
+      <div class="col">
+        <span><br>・中央揃え<br></span>
+        <nav class="navbar navbar-expand-sm bg-light justify-content-center">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">google</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">yahoo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">youtube</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">twitter</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="message-index">
+          <a class="comments">
+            中央揃えはnavタグにjustify-content-centerクラスを追加する
+          </a>
+        </div>
+      </div><!--col-->
+    </div><!--row-->
+    <div class="row">
+
+      <div class="col">
+        
+        <!--配色
+          bg-colorを使えばナビゲーションバーの背景色を変更できる
+          .bg-primary 青
+          ,.bg-success 緑
+          ,.bg-info 鴨の羽色
+          ,.bg-warning 黄色
+          ,.bg-danger 赤
+          ,.bg-secondary 灰色
+          ,.bg-dark 黒 navbar-darkと併用する
+          ,.bg-light 白 navbar-lightと併用する
+          またnavbar-lightで、文字色が黒
+          navbar-darkで、文字色が白になる。
+        -->
+        <a><br>・配色変更<br></a>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">google</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">yahoo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">youtube</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">twitter</a>
+              </li>
+              
+            </ul>
+          </nav>
+          <div class="message-index">
+            <a class="comments">
+              navタグのクラスにbg-colorを追加すればナビゲーションバーの背景色を変更できる。<br>
+            色は次の表の通り。
+          </a>
+          <table border="1">
+            <tr>
+              <th>class</th>
+              <th>color</th>
+            </tr>
+            <tr>
+              <th>.bg-primary</th>
+              <th><a class="bg-primary">Primary</a></th>
+            </tr>
+            <tr>
+              <th>.bg-success</th>
+              <th><a class="bg-success">Success</a></th>
+            </tr>
+            <tr>
+              <th>.bg-info</th>
+              <th><a class="bg-info">Info</a></th>
+            </tr>
+            <tr>
+              <th>.bg-warning</th>
+              <th><a class="bg-warning">Warning</a></th>
+            </tr>
+            <tr>
+                <th>.bg-danger</th>
+                <th><a class="bg-danger">Danger</a></th>
+              </tr>
+              <tr>
+                <th>.bg-secondary</th>
+                <th><a class="bg-secondary">Secondary</a></th>
+              </tr>
+              <tr>
+                <th>.bg-dark</th>
+                <th><a class="bg-dark">Dark</a>
+                  <a>※navbar-lightと併用</a>
+                </th>
+              </tr>
+              <tr>
+                <th>.bg-light</th>
+                <th><a class="bg-light">Light</a>
+                <a>※navbar-darkと併用</a>
+              </th>
+            </tr>
+          </table>
+        </div>
+      </div><!--col-->
+    </div><!--row-->
+    <div class="row">
+
+      <div class="col">  
+        <!--navbar-brandクラスはナビゲーションバーの先頭に配置太文字や画像が使用できる-->
+        <!--ハンバーガーアイコンの生成にはbuttonタグを使用する。ボタンタグにclass="navbar-toggler",data-toggle="collaspe"
+          またハンバーガーアイコンにする対象のナビゲーションに追加されたid属性をdata-target="#thetarget"で指定する。
+          対象のナビゲーション(ul)はdivタグで囲み、divタグにはclass="cpllaspe navbar-collapseとid=thetargetを追加する。"-->
+        <a>・ハンバーガーアイコン</a>
+        <nav class="navbar navbar-expand-sm bg-success navbar-dark">
+          <!--まとめたくないものはdivタグの外に記述する-->
+          <a class="nav-brand" href="#">TEST</a>
+          <!--ボタンの生成-->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#targettest">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="targettest">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">google</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">yahoo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">youtube</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">twitter</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="message-index">
+          <a class="comments">
+            ハンバーガーアイコンの生成にはbuttonタグを使用する。<br>ボタンタグにclass="navbar-toggler",data-toggle="collaspe"
+            またハンバーガーアイコンにする対象のナビゲーションに追加されたid属性をdata-target="#thetarget"で指定する。<br>
+            アイコンのデザインはspanタグのクラスで指定する。<br>
+            対象のナビゲーション(ul)はdivタグで囲み、divタグにはclass="cpllaspe navbar-collapseとid=thetargetを追加する。
+          </a>
+        </div>
+        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#code2">source code</button>
+        <pre class="prettyprint lang-html linenums collaspe message-index" id="code2">
+          &lt;!--ボタンの生成--&gt;
+          &lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#targettest&quot;&gt;
+          &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
+          &lt;/button&gt;
+
+          &lt;!--ナビゲーションバー側の指定--&gt;      
+          &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;targettest&quot;&gt;
+          &lt;ul class=&quot;navbar-nav&quot;&gt;
+            ︙
+          &lt;/div&gt;</pre>
+      </div><!--col-->
+    </div><!--row-->  
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="../../../js/bootstrap.min.js"></script>
     <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
   </body>
-</html>
+  </html>
