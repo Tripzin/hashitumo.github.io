@@ -34,7 +34,7 @@
             画面サイズは.navbar-expand-xl|lg|md|smで設定する
             .navbar-expandがなければ最初から縦配置になる。<br>
             ナビゲーションにリンクを追加したい場合はulタグにクラスnavbar-navを適用し、
-            その子にnav-itemクラスを追加したliタグ、さらにその子にnav-linkクラスと、
+            その子にnav-itemクラスを追加したliタグ、さらにその子のaタグ(またはspanタグ)にnav-linkクラスと、
             href属性(リンク先を追加すること)を追加すればよい。
           </a>
         </div>
@@ -122,8 +122,8 @@
           </nav>
           <div class="message-index">
             <a class="comments">
-              navタグのクラスにbg-colorを追加すればナビゲーションバーの背景色を変更できる。<br>
-            色は次の表の通り。
+              navタグのクラスにbg-colorを追加すればバーの背景色を変更できる。<br>
+            色は次の表の通り。bg-darkおよびbg-lightは文字色が重ならないようにする。
           </a>
           <table border="1">
             <tr>
@@ -206,7 +206,7 @@
         <div class="message-index">
           <a class="comments">
             ハンバーガーアイコンの生成にはbuttonタグを使用する。<br>ボタンタグにclass="navbar-toggler",data-toggle="collaspe"
-            またハンバーガーアイコンにする対象のナビゲーションに追加されたid属性をdata-target="#thetarget"で指定する。<br>
+            と、ハンバーガーアイコンにする対象のid属性をdata-target="#thetarget"で指定する。<br>
             アイコンのデザインはspanタグのクラスで指定する。<br>
             対象のナビゲーション(ul)はdivタグで囲み、divタグにはclass="cpllaspe navbar-collapseとid=thetargetを追加する。
           </a>
