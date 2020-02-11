@@ -393,4 +393,15 @@ window.onload = function () {
   gameBoard.appendChild(tbody);
   displaySpace.appendChild(gameBoard);
 
+  //IOS用の設定
+  function prevent(e) {
+    event.preventDefault();
+  }
+  //document.addEventListener("touchstart",prevent,{passive:false});
+  //document.addEventListener("touchmove",prevent,{passive:false});
+  //document.addEventListener("touchend",prevent,{passive:false});
+  document.addEventListener("gesturestart", prevent, { passive: false });
+  document.addEventListener("gesturechange", prevent, { passive: false });
+  document.addEventListener("gestureend", prevent, { passive: false });
+
 }
