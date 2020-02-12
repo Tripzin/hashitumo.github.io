@@ -1,0 +1,6 @@
+on:
+  push:
+    branches:
+      - master  # default branch
+
+publish_branch: master  # deploying branch
