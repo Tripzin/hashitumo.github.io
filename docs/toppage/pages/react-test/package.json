@@ -33,5 +33,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://tripzin.github.io/notebook/toppage/pages/react-test"
+  "homepage": "https://tripzin.github.io/notebook/toppage/pages/react-test",
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
+  }
 }
