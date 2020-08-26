@@ -1,0 +1,50 @@
+.container-background {
+  background-color: antiquewhite;
+}
+
+.circle-button {
+  width: 5em;
+  height: 5em;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  content: "";
+  letter-spacing: 1px;
+  border-radius: 50%;
+  border: none;
+  outline: 0;
+
+  /* hover */
+  transition: box-shadow 0.1s;
+
+
+}
+
+.circle-button:focus {
+  outline: 0;
+}
+
+.circle-button:hover {
+  box-shadow: 0 0 0 5px brown;
+}
+
+.button-margin {
+  margin-bottom: 10px;
+}
+
+.twitter-button {
+  background-image: url(../img/Twitter_Logo_Blue.svg);
+}
+
+.qiita-button {
+  background-image: url(../img/qiita-favicon.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.github-button {
+  background-image: url(../img/GitHub-Mark-64px.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
