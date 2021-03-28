@@ -127,21 +127,14 @@ $(function(){
             });
 
         // パレットの展開
-        $isExpanded = true;
-        $(".btn-open-palette").on("click touchstart touchend", function(){
+        $(".btn-open-palette").on("click", function(){
             $(this).children('span.material-icons').each(function(index,icons){
                 if(icons.innerHTML == 'expand_more'){
                     icons.innerHTML = 'expand_less';
-                    $isExpanded = true;
                 } else {
                     icons.innerHTML = 'expand_more';
-                    $isExpanded = false;
                 }
-                if($isExpanded){
-                    $(".palette").slideUp(300);
-                } else {
-                    $(".palette").slideDown(300);
-                }
+                $(".palette").slideToggle();
             })
         })
        
