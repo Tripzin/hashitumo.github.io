@@ -6,121 +6,158 @@
         <meta name ="description" content="手元にある抵抗のカラーコードを合わせるだけで、抵抗値がわかります！
         PCでアクセスするとレイアウトが崩れる可能性があります。">
         <meta namae="viewport" content="width=device-width,initial-scala=1.0">
-        <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Expanded&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
         <link rel="stylesheet" type = "text/css" href ="css/style.css">
+        <link rel ="stylesheet" href="../../css/bootstrap.min.css">
         <script type= "text/javascript" src = "script/jquery.js"></script>
         <script type= "text/javascript" src ="script/jquery.flickEndless-1.0.3-min.js"></script>
         <script type = "text/javascript" src = "script/teikou.js"></script>
     </head>
     <body>
-        <div class = "all">
-            <div class = "ans">
-                <p class="ans_write"></p>
+        <div class="container">
+            <div class="all">
+                <div class="ans"><p class="ans_write d-flex justify-content-center"></p></div>
+                <table class="overflow-hidden d-flex mb-30" id="dram">
+                    <thead class="w-100">
+                        <tr class="d-flex align-items-baseline justify-content-around row">
+                            <th class="guru col-3">
+                                <div class="endless-flick">
+                                    <ul class="dram0">
+                                        <li><div>0</div></li>
+                                        <li><div>1</div></li>
+                                        <li><div>2</div></li>
+                                        <li><div>3</div></li>
+                                        <li><div>4</div></li>
+                                        <li><div>5</div></li>
+                                        <li><div>6</div></li>
+                                        <li><div>7</div></li>
+                                        <li><div>8</div></li>
+                                        <li><div>9</div></li>
+                                    </ul>
+                                </div>
+                            </th>
+                            <th class="guru col-3">
+                                <div class="endless-flick">
+                                    <ul class="dram1">
+                                        <li><div>0</div></li>
+                                        <li><div>1</div></li>
+                                        <li><div>2</div></li>
+                                        <li><div>3</div></li>
+                                        <li><div>4</div></li>
+                                        <li><div>5</div></li>
+                                        <li><div>6</div></li>
+                                        <li><div>7</div></li>
+                                        <li><div>8</div></li>
+                                        <li><div>9</div></li>
+                                    </ul>
+                                </div>
+                            </th>
+                            <th class="guru col-3">
+                                <div class="endless-flick">
+                                    <ul class="dram2">
+                                        <li><div>0</div></li>
+                                        <li><div>1</div></li>
+                                        <li><div>2</div></li>
+                                        <li><div>3</div></li>
+                                        <li><div>4</div></li>
+                                        <li><div>5</div></li>
+                                        <li><div>6</div></li>
+                                        <li><div>7</div></li>
+                                        <li><div>8</div></li>
+                                        <li><div>9</div></li>
+                                        <li><div>10</div></li>
+                                        <li><div>11</div></li>
+                                    </ul>
+                                </div>
+
+                            </th>
+                            <th class="guru col-2">
+                                <div class="endless-flick">
+                                    <ul class="dram3">
+                                        <li><div>±1</div></li>
+                                        <li><div>±2</div></li>
+                                        <li><div>±5</div></li>
+                                        <li><div>±10</div></li>
+                                        <li><div>±20</div></li>
+                                    </ul>
+                                </div>
+                            </th>
+                            <th class="col-auto"></th>
+                        </tr>
+                    </thead>
+                </table>
+                <a class="btn-lg btn-open-palette">
+                    <span>Palette</span>
+                    <span class="material-icons">expand_more</span>
+                </a>
+                <div class="palette">
+                    <table class="buttons d-flex">
+                        <tbody class="w-100">
+                            <tr class="d-flex row justify-content-around">
+                                <td class="col-3">
+                                    <ul class="dram0_button">
+                                        <li><a href="#">0</a></li>
+                                        <li><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><a href="#">5</a></li>
+                                        <li><a href="#">6</a></li>
+                                        <li><a href="#">7</a></li>
+                                        <li><a href="#">8</a></li>
+                                        <li><a href="#">9</a></li>
+                                    </ul>
+                                </td>
+                                <td class="col-3">
+                                    <ul class="dram1_button">
+                                        <li><a href="#">0</a></li>
+                                        <li><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><a href="#">5</a></li>
+                                        <li><a href="#">6</a></li>
+                                        <li><a href="#">7</a></li>
+                                        <li><a href="#">8</a></li>
+                                        <li><a href="#">9</a></li>
+                                    </ul>
+                                </td>
+                                <td class="col-3">
+                                    <ul class="dram2_button">
+                                        <li><a href="#">0</a></li>
+                                        <li><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><a href="#">5</a></li>
+                                        <li><a href="#">6</a></li>
+                                        <li><a href="#">7</a></li>
+                                        <li><a href="#">8</a></li>
+                                        <li><a href="#">9</a></li>
+                                        <li><a href="#">10</a></li>
+                                        <li><a href="#">11</a></li>
+                                    </ul>
+                                </td>
+                                <td class="col-2">
+                                    <ul class="dram3_button">
+                                        <li><a href="#">±1</a></li>
+                                        <li><a href="#">±2</a></li>
+                                        <li><a href="#">±5</a></li>
+                                        <li><a href="#">±10</a></li>
+                                        <li><a href="#">±20</a></li>
+                                    </ul>
+                                </td>
+                                <td class="col-auto"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-            <div id = "dram">
-                <div class = "guru">
-                    <ul class= "dram0">
-                        <li><div>0</div></li>
-                        <li><div>1</div></li>
-                        <li><div>2</div></li>
-                        <li><div>3</div></li>
-                        <li><div>4</div></li>
-                        <li><div>5</div></li>
-                        <li><div>6</div></li>
-                        <li><div>7</div></li>
-                        <li><div>8</div></li>
-                        <li><div>9</div></li>
-                    </ul>
-                </div>
-                <div class = "guru">
-                    <ul class = "dram1">
-                        <li><div>0</div></li>
-                        <li><div>1</div></li>
-                        <li><div>2</div></li>
-                        <li><div>3</div></li>
-                        <li><div>4</div></li>
-                        <li><div>5</div></li>
-                        <li><div>6</div></li>
-                        <li><div>7</div></li>
-                        <li><div>8</div></li>
-                        <li><div>9</div></li>
-                    </ul>
-                </div>
-                <div class ="guru">
-                    <ul class ="dram2">
-                        <li><div>0</div></li>
-                        <li><div>1</div></li>
-                        <li><div>2</div></li>
-                        <li><div>3</div></li>
-                        <li><div>4</div></li>
-                        <li><div>5</div></li>
-                        <li><div>6</div></li>
-                        <li><div>7</div></li>
-                        <li><div>8</div></li>
-                        <li><div>9</div></li>
-                        <li><div>10</div></li>
-                        <li><div>11</div></li>
-                     
-                    </ul>
-                </div>
-                <div class = "guru">
-                    <ul class = "dram3" style="padding-right: 40px;">
-                            <li><div>±1</div></li>
-                            <li><div>±2</div></li>
-                            <li><div>±5</div></li>
-                            <li><div>±10</div></li>
-                            <li><div>±20</div></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="buttons">    
-                <div class = "dram0_button">
-                    <li><a href="void(0)">0</a></li>
-                    <li><a href="void(0)">1</a></li>
-                    <li><a href="void(0)">2</a></li>
-                    <li><a href="void(0)">3</a></li>
-                    <li><a href="void(0)">4</a></li>
-                    <li><a href="void(0)">5</a></li>
-                    <li><a href="void(0)">6</a></li>
-                    <li><a href="void(0)">7</a></li>
-                    <li><a href="void(0)">8</a></li>
-                    <li><a href="void(0)">9</a></li>
-                </div>
-                <div class = "dram1_button">
-                    <li><a href="void(0)">0</a></li>
-                    <li><a href="void(0)">1</a></li>
-                    <li><a href="void(0)">2</a></li>
-                    <li><a href="void(0)">3</a></li>
-                    <li><a href="void(0)">4</a></li>
-                    <li><a href="void(0)">5</a></li>
-                    <li><a href="void(0)">6</a></li>
-                    <li><a href="void(0)">7</a></li>
-                    <li><a href="void(0)">8</a></li>
-                    <li><a href="void(0)">9</a></li>
-                </div>
-                <div class = "dram2_button">
-                    <li><a href="void(0)">0</a></li>
-                    <li><a href="void(0)">1</a></li>
-                    <li><a href="void(0)">2</a></li>
-                    <li><a href="void(0)">3</a></li>
-                    <li><a href="void(0)">4</a></li>
-                    <li><a href="void(0)">5</a></li>
-                    <li><a href="void(0)">6</a></li>
-                    <li><a href="void(0)">7</a></li>
-                    <li><a href="void(0)">8</a></li>
-                    <li><a href="void(0)">9</a></li>
-                    <li><a href="void(0)">10</a></li>
-                    <li><a href="void(0)">11</a></li>
-                </div>
-                <div class = "dram3_button">
-                    <li><a href="void(0)">±1</a></li>
-                    <li><a href="void(0)">±2</a></li>
-                    <li><a href="void(0)">±5</a></li>
-                    <li><a href="void(0)">±10</a></li>
-                    <li><a href="void(0)">±20</a></li>
-                </div>
-            </div>
-        </body>
-        </html>
+        </div>
+    </body>
+</html>
         

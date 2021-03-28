@@ -1,126 +1,106 @@
-html{
-    height: 100%;
+*{
+    font-family: 'Roboto', sans-serif;
 }
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+  }
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    vertical-align: text-top;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+
 body{
-    height: 100%;
-    margin:0;
-    width:100%;
-    background: #c6eaff;
+    background-color: #dde1e8 !important;
+}
+
+.all {
+    background: #e9ecef;
+    padding: 20px;
+    border-radius: 25px;
+    margin: 10px;
+}
+
+.ans_write{
+    font-size: 5rem;
+    align-items: center;
+    height: 150px;
 }
 
 #dram{
     height:200px;
     background: #deb887;
-    display: flex;
-    justify-content: space-around;
-    padding:0px 0px 0px 0px;
-    border: 1px solid #7b7b7b;
-    margin:220px 0 10px -30px;
-    border-radius: 5%;
-}
-#dram > div{
-    width: 100%;
-    height: 100%;
-    padding: 0 0;
-    margin: 0px 0 0 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
 }
 
-
-
-.ans{
-    position:fixed;
-    width:100%;
-    top:0px;
-    left:0px;
-    z-index: 1;
-}
-.ans_write{
-    color: #004b4c;
-    align-items: center;
-    justify-content: center;
-    font-size: 630%;
-    height: 200px;
-    width:100%;
-    border: 5px dashed #c6eaff;
-    background: whitesmoke;
-    margin: 0;
-    display: inline-flex;
-    text-align: center;
-    overflow: hidden;
-    font-family: 'Encode Sans Semi Expanded', sans-serif;
-}
-.title_name{
-    font-size: 100%;
-}
-
-
-ul{
-    height: 100%;
-}
 li{
     list-style-type: none;
-    width: 160.5px;
-    height:100%;
+    overflow: hidden;
+    text-indent: 100%;
+
+}
+
+div.endless-flick li{
+    height:200px;
+}
+
+.btn-open-palette {
+    cursor: pointer;
+    border-radius: 15px !important;
+    border: 1px solid #dde1e8 !important;
+    background-color: #dde1e8 !important;
+}
+
+.btn-open-palette:hover{
+    border: 1px solid !important;
+}
+
+.palette {
+    background-color: #dde1e8;
+    padding-top: 30px;
+    border-radius: 20px;
+    margin-top: 15px;
+    transition: 100% 300ms;
+}
+
+.palette li{
+    margin-top: 10px;
+    border-radius: 10px;
+    height:100px;
+}
+
+.palette li a{
     display: block;
     overflow: hidden;
     text-indent: 100%;
-}
-
-.buttons{
-    height: 12.5%;
-}
-
-.buttons > div{
-    margin: 0px 6.5% -21px 28px;
+    height: 100%;
 }
 
 
-
-
-.buttons{
-    display :flex;
-    position: relative;
-}
-
-li a{
-    display: block;
-    overflow: hidden;
-    text-indent: 100%;
-    height: 85%;
-}
-.buttons div li{
-    height: 44%;
-    width:161.5px;
-    border-radius:10%;
-    margin-top:10px;
-    margin-bottom:10px;
-    box-shadow:4px 4px #94d8ffd9;    
-}
-
-.buttons div:last-child{
-    width:10px;
-}
-
-
-@media only screen and (max-device-width:480px){
-@media (orientation: landscape){
-    .buttons{
-        display:none;    
-    }
-}
-
-@media(orientation:portrait){
-    .buttons{
-        height: 100%;
-    }
-    .all{
-        height:17%;
-    }
-
-    .buttons > div{
-        display:block;
-        height: 11%;
-        margin: 0px 63px -21px 28px;
-    }
-}
-}
