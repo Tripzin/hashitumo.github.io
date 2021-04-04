@@ -1,5 +1,16 @@
+*{
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #dde1e8 !important;
+}
+
 .container-background {
-  background-color: antiquewhite;
+  margin-top      : 10px;
+  border-radius   : 10px;
+  background-color: #e9ecef !important;
+  padding         : 10px;
 }
 
 .circle-button {
@@ -15,18 +26,24 @@
   outline: 0;
 
   /* hover */
-  transition: box-shadow 0.1s;
+  /* transition: box-shadow 0.1s; */
 
+}
 
+.content {
+  margin-top: 10px;
+  background-color: #dde1e8;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .circle-button:focus {
   outline: 0;
 }
 
-.circle-button:hover {
+/* .circle-button:hover {
   box-shadow: 0 0 0 5px brown;
-}
+} */
 
 .button-margin {
   margin-bottom: 10px;
@@ -46,5 +63,12 @@
   background-image: url(../img/GitHub-Mark-64px.png);
   background-repeat: no-repeat;
   background-size: contain;
+}
 
+.card-text {
+  height: 70px !important;
+}
+
+.link-text{
+  text-decoration: none !important;
 }

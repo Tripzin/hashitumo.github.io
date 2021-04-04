@@ -1,75 +1,76 @@
 <head>
   <link rel="stylesheet" href="../css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/custom.css">
+  <script src="../js/jquery-3.6.0.min.js"></script>
+  <script src="../js/toppage.js"></script>
 </head>
 
-<div class="container-fluid container-background">
-  <div class="row mb-5">
-    <div class="col">
-      <h1 class="display-3 text-center">Hashitumo</h1>
-    </div>
-    <!-- row -->
-  </div>
-  <div class="row mb-5">
-    <div class="col col-lg-4">
-      <div class="text-center button-margin ">
-        <button class="circle-button twitter-button"
-          onclick="location.href='https://twitter.com/hashitumo10to'"></button>
-      </div>
-    </div>
-    <div class="col col-lg-4">
-      <div class="text-center button-margin">
-        <button class="circle-button qiita-button" onclick="location.href='https://qiita.com/hashitumo10to'"></button>
-      </div>
-    </div>
-    <div class="col col-lg-4">
-      <div class="text-center button-margin">
-        <button class="circle-button github-button" onclick="location.href='https://github.com/Tripzin'"></button>
-
-      </div>
-    </div>
-  </div>
-  <!-- row -->
+<div class="container container-background">
   <div class="row">
     <div class="col">
-      <div class="display-3 text-center">後日追加予定</div>
+      <h2 class="display-3 text-center">HASHITUMO</h2>
     </div>
   </div>
 
-  <!-- <div class="row">
-    <div class="col-lg-4 mb-3">
-      <div class="card text-left">
-        <img class="card-img-top" src="../img/hasamishogi.png" alt="はさみ将棋">
-        <div class="card-body">
-          <h5 class="card-title"><a href="https://tripzin.github.io/hasami-shogi/">はさみ将棋</a> </h5>
-          <p class="card-text">はさみの判定が結構大変で苦労しました。Reactで作成しました。</p>
+  <div class="content">
+    <h2 class="text-center py-2">SNS</h2>
+    <div class="d-flex justify-content-around align-items-center row">
+      <div class="col">
+        <div class="text-center button-margin">
+          <button class="circle-button twitter-button"
+          onclick="location.href='https://twitter.com/hashitumo10to'"></button>
+        </div>
+      </div>
+      <div class="col">
+        <div class="text-center button-margin">
+          <button class="circle-button qiita-button" onclick="location.href='https://qiita.com/hashitumo10to'"></button>
+        </div>
+      </div>
+      <div class="col">
+        <div class="text-center button-margin">
+          <button class="circle-button github-button" onclick="location.href='https://github.com/Tripzin'"></button>
         </div>
       </div>
     </div>
-    <div class="col-lg-4 mb-3">
-      <div class="card text-left">
-        <img class="card-img-top" src="../img/teikou.png" alt="抵抗値調べるやつ">
-        <div class="card-body">
-          <h5 class="card-title">
-            <a href="https://tripzin.github.io/notebook/toppage/pages/teikou/">
-              カラー抵抗値調べるやつ
-            </a>
-          </h5>
-          <p class="card-text">カラー抵抗の値を表を見てわざわざ調べるのが面倒だったので作りました。</p>
+  </div>
+  
+  <div class="content">
+    <h2 class="text-center py-2">ABOUT</h2>
+    <div class="row">
+      <div class="col-lg-4 mb-3">
+        <div class="card text-left">
+          <img class="card-img-top img-thumbnail" src="../img/hasamishogi.png" alt="はさみ将棋">
+          <div class="card-body text-center">
+            <h5 class="card-title"><a class="link-text stretched-link" href="https://tripzin.github.io/hasami-shogi/">はさみ将棋</a> </h5>
+            <p class="card-text">シンプルなはさみ将棋です。はさみの判定が結構大変で苦労しました。Reactで作成しました。</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col-lg-4 mb-3">
-      <div class="card text-left">
-        <img class="card-img-top" src="../img/taskmanager.png" alt="タスクマネージャー">
-        <div class="card-body">
-          <h5 class="card-title">
-            <a href="https://tripzin.github.io/task-manager-simulator/">タスクマネージャー</a>
-          </h5>
-          <p class="card-text">多コアのタスクマネージャーを体験できます(?)数字は適当です。</p>
+      <div class="col-lg-4 mb-3">
+        <div class="card text-left">
+          <img class="card-img-top img-thumbnail" src="../img/teikou.png" alt="抵抗値調べるアプリ">
+          <div class="card-body text-center">
+            <h5 class="card-title">
+              <a class="link-text stretched-link" href="https://tripzin.github.io/notebook/toppage/pages/teikou/">
+                カラー抵抗値調べるアプリ
+              </a>
+            </h5>
+            <p class="card-text">カラー抵抗の値を表を見てわざわざ調べるのが面倒だったので作りました。</p>
+          </div>
         </div>
       </div>
-    </div>
-  </div> -->
-  <!-- row -->
+      <div class="col-lg-4 mb-3">
+        <div class="card text-left">
+          <img class="card-img-top img-thumbnail" src="../img/taskmanager.png" alt="タスクマネージャー">
+          <div class="card-body text-center">
+            <h5 class="card-title">
+              <a class="link-text stretched-link" href="https://tripzin.github.io/task-manager-simulator/">タスクマネージャー</a>
+            </h5>
+            <p class="card-text">多コアCPUのタスクマネージャーを再現しました。数字は適当です。</p>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div>
+
 </div>
